@@ -1,0 +1,84 @@
+@use '../../scss/abstracts/variables' as v;
+@use '../../scss/abstracts/mixins' as m;
+
+.timer {
+  
+  width: 100%;
+  background-color: v.$color-pink-tint;
+
+  &__container {
+    @include m.responsiveDesign( phone ) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__content {
+    @include m.responsiveDesign( phone ) {
+      grid-row: 2 / 3;
+      margin-top: 4.8rem;
+    }
+  }
+
+  &__text {
+    margin: 0 auto;
+    width: 80%;
+    margin-bottom: 3.2rem;
+    
+    @include m.responsiveDesign( phone ) {
+      width: 90%;
+    }
+  }
+
+  &__element {
+    margin-right: 4.8rem;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__number {
+    font-family: v.$font-df-subtitle;
+    font-weight: 300;
+    font-size: 4.8rem;
+    @include m.responsiveDesign( phone ) {
+      font-size: 3.2rem;
+    }
+  }
+
+  &__concept {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+
+
+  &__photos {
+    gap: 4.8rem;
+
+    @include m.responsiveDesign( phone ) {
+      grid-template-columns: 1fr;
+      gap: 3.2rem;
+    }
+
+  }
+
+  &__photo {
+    height: 45rem;
+    overflow-y: hidden;
+
+    @include m.responsiveDesign( phone ) {
+      height: 50rem;
+
+      &:first-child {
+        display: none;
+      }
+
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+  }
+
+}

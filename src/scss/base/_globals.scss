@@ -1,0 +1,43 @@
+@use '../abstracts/variables' as v;
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: v.$color-white-tint;
+  overflow-x: hidden;
+}
+
+ul, ol, dl {
+  list-style: none;
+}
+
+a, button {
+  display: inline-block;
+  cursor: pointer;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+input, select, textarea {
+  border: none;
+  width: 100%;
+  padding: 1rem;
+  outline: none;
+}

@@ -1,0 +1,9 @@
+@use '../abstracts/variables' as v;
+
+.section-space {
+  padding: calc( v.$gap * 3 ) 0;
+}
+
+.text-center {
+  text-align: center;
+}

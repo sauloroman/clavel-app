@@ -1,0 +1,32 @@
+.flex {
+
+  display: flex;
+
+  &-center {
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-column-center {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-between {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+}
+
+.grid {
+
+  display: grid;  
+  place-items: center;
+
+  &-2-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}

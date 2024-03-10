@@ -1,0 +1,42 @@
+@use '../../scss/abstracts/variables' as v;
+@use '../../scss/abstracts/mixins' as m;
+
+.history {
+  height: 45rem;
+  position: relative;
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 45%;
+  
+  @include m.responsiveDesign( phone ) {
+    background-size: auto;
+    height: 40rem;
+  }
+
+  &__container {
+    height: 100%;
+  }
+
+  &__text {
+    width: 50%;
+    margin-bottom: 1.2rem;
+
+    @include m.responsiveDesign( phone ) {
+      width: 85%;
+    }
+
+  }
+
+  &__event {
+    margin-bottom: 2rem;
+  }
+
+  &__date {
+    font-size: 2.4rem;
+    font-weight: 300;
+    letter-spacing: 3px;
+  }
+
+
+}

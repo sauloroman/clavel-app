@@ -19,6 +19,12 @@
     }
   }
 
+  &__last {
+    @include m.responsiveDesign( phone ) {
+      margin-bottom: 1.6rem;
+    }
+  }
+
   &__text {
     margin: 0 auto;
     width: 80%;
@@ -31,6 +37,10 @@
 
   &__element {
     margin-right: 4.8rem;
+
+    @include m.responsiveDesign( phone ) {
+      margin-right: 3.2rem;
+    }
 
     &:last-child {
       margin-right: 0;

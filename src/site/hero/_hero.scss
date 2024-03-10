@@ -12,7 +12,7 @@
   position: relative;
 
   @include m.responsiveDesign( phone ) {
-    height: 55vh;
+    height: 65vh;
     background-position: 65%;
     position: relative;
   }

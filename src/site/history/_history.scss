@@ -12,6 +12,8 @@
   @include m.responsiveDesign( phone ) {
     background-size: auto;
     height: 40rem;
+    background-position-y: 30%;
+    background-position-x: 10%;
   }
 
   &__container {
@@ -26,10 +28,6 @@
       width: 85%;
     }
 
-  }
-
-  &__event {
-    margin-bottom: 2rem;
   }
 
   &__date {

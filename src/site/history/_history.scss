@@ -10,6 +10,7 @@
   background-position-y: 45%;
   
   @include m.responsiveDesign( phone ) {
+    height: 40rem;
     background-size: auto;
     background-position-y: -60%;
     background-position-x: 80%;

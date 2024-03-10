@@ -35,7 +35,6 @@
     
     @include m.responsiveDesign( phone ) {
       width: 100%;
-      bottom: 80%;
       left: 50%;
       transform: translateX(-50%);
     }

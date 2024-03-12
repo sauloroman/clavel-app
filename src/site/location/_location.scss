@@ -20,39 +20,101 @@
     place-items: center;
     grid-template-columns: repeat( 3, 1fr );
     row-gap: 3.2rem;
+
+    @include m.responsiveDesign( tab-port ) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__empty {
+    @include m.responsiveDesign( tab-port ) {
+      display: none;
+    }
   }
 
   &__content {
-    
+    border: 1px solid v.$color-gray-tint;
+    padding: 3.2rem;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+
+    @include m.responsiveDesign( tab-port ) {
+      box-shadow: 0 3px 3px rgba(0, 0, 0, 0.15);
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    &:nth-child(1) {
+      border-right: none;
+
+      @include m.responsiveDesign( tab-port ) {
+        border: 1px solid v.$color-gray-tint;
+      }
+    }
+
+    &:nth-child(2) {
+      border-left: none;
+
+      @include m.responsiveDesign( tab-port ) {
+        border: 1px solid v.$color-gray-tint;
+      }
+
+    }
   }
 
   &__iconBox {
     width: 100%;
     display: flex;
-    justify-content: center;
-    margin-bottom: 2rem;
+    justify-content: flex-start;
+    opacity: .5;
+    margin-bottom: -30px;
+    
+    @include m.responsiveDesign( tab-port ) {
+      margin-bottom: -40px;
+    }
 
     img {
-      width: 8rem;
+      width: 10rem;
+
+      @include m.responsiveDesign( tab-port ) {
+        width: 8rem;
+      }
     }
 
   }
 
   &__type {
     font-weight: 300;
-    font-size: 2rem;
-    font-family: v.$font-df-subtitle;
+    font-size: 4rem;
+  }
+
+  &__address {
+    color: v.$color-white-shade;
+  }
+
+  &__hour {
+    font-size: 3.2rem;
+    margin-bottom: 2rem;
+  }
+
+  &__button {
+    @include m.createButton( v.$color-brown, v.$color-white-tint, 20rem );
+
+    @include m.responsiveDesign( tab-port ) {
+      width: 100%;
+    }
   }
 
   &__figure {
-    height: 35rem;
-    width: 50rem;
+    height: 40rem;
+    width: 100%;
     position: relative;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, .15);
+    background-color: v.$color-brown;
 
     img {
       width: 100%;
-      height: 100%;
+      height: 95%;
     }
 
     &-layout {

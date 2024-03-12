@@ -1,6 +1,8 @@
 import templeImage from '../../assets/img/templo-image.jpg';
 import gardenImage from '../../assets/img/salon-image.jpg';
 import cruzImage from '../../assets/img/cruz.png';
+import copaImage from '../../assets/img/copa.png';
+import flor1 from '../../assets/img/flor-1.png';
 
 export const Location = () => {
   return (
@@ -17,8 +19,11 @@ export const Location = () => {
             <div className="location__iconBox">
               <img src={ cruzImage } alt="Cruz" className="location__img" />
             </div>
-            <h3 className='location__type'>Misa</h3>
-            <p className="location__information">19:00 &mdash; Parroquia del Sagrado Corazón de Jesús</p>
+            <h3 className='location__type'>Ceremonia</h3>
+            <p className="location__information">Parroquia del Sagrado Corazón de Jesús</p>
+            <p className="location__address">5 de Mayo 602, Zona Centro, 20000 Aguascalientes, Ags.</p>
+            <p className="location__hour text-important">19:00</p>
+            <a className='location__button' href="https://maps.app.goo.gl/fNAe3g82yUVQu3Vw5">Ver Mapa</a>
           </div>
           <figure className="location__figure">
             <img className='location__img' src={ templeImage } alt="Templo" />
@@ -30,8 +35,15 @@ export const Location = () => {
             <img className='location__img' src={ gardenImage } alt="Templo" />
             <div className="location__figure-layout"></div>
           </figure>
-          <div className="location__content">
-            <h3>Misa</h3>
+          <div className="location__content flex flex-column-center">
+            <div className="location__iconBox">
+              <img src={ copaImage } alt="Cruz" className="location__img" />
+            </div>
+            <h3 className='location__type'>Recepción</h3>
+            <p className="location__information">Parroquia del Sagrado Corazón de Jesús</p>
+            <p className="location__address">5 de Mayo 602, Zona Centro, 20000 Aguascalientes, Ags.</p>
+            <p className="location__hour text-important">20:00</p>
+            <a className='location__button' href="https://maps.app.goo.gl/fNAe3g82yUVQu3Vw5">Ver Mapa</a>
           </div>
         </section>
       </div>

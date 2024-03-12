@@ -25,3 +25,22 @@
   }
 
 }
+
+@mixin createButton( $bgColor, $color, $width, ) {
+
+  text-align: center;
+  display: inline-block;
+  width: $width;
+  padding: 1.2rem;
+  background-color: $bgColor;
+  color: $color;
+  border: 1px solid transparent;
+  transition: all .4s ease-out;
+
+  &:hover {
+    background-color: $color;
+    border-color: $bgColor;
+    color: $bgColor;
+  }
+
+}

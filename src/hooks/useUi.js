@@ -11,7 +11,7 @@ export const useUi = () => {
   }
 
   const onCloseMenu = () => {
-    dispatch( closeMenu() );
+    dispatch( closeMenu() )
   }
 
   return {

@@ -16,7 +16,6 @@
     background-color: #fff;
     height: 100vh;
     flex-direction: column;
-    justify-content: space-between;
     padding: 1.2rem;
     box-shadow: 0 15px 15px rgba( 0, 0, 0, .15);
   }
@@ -110,25 +109,27 @@
     justify-content: flex-end;
     align-items: center;
     border-bottom: 1px solid v.$color-purple-tint;
-
+    margin-bottom: 4.8rem;
+    
     p {
       display: none;
       font-family: v.$font-df-heading;
       margin-right: 1.2rem;
       font-size: 2.4rem;
-
+      
       @include m.responsiveDesign( tab-port ) {
         display: block;
       }
     }
   }
-
+  
   &__iconMenu {
     margin-bottom: 0;
     border: none;
   }
-
+  
   &__footer {
+    margin-top: 4.8rem;
     display: none;
 
     @include m.responsiveDesign( tab-port ) {

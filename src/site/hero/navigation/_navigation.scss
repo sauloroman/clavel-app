@@ -14,10 +14,10 @@
     z-index: 999;
     width: 60%;
     background-color: #fff;
-    height: 100%;
+    height: 100vh;
     flex-direction: column;
     justify-content: space-between;
-    padding: 3.2rem;
+    padding: 1.2rem;
     box-shadow: 0 15px 15px rgba( 0, 0, 0, .15);
   }
 
@@ -44,20 +44,20 @@
     @include m.responsiveDesign( tab-port ) {
       margin-right: 0;
     }
-
+    
   }
 
   &__link {
-
+    
     letter-spacing: 1px;
     color: inherit;
     transition: all .4s ease-out;
-
+    
     &:hover {
       color: v.$color-pink;
       border-color: v.$color-pink;
     }
-
+    
     @include m.responsiveDesign( tab-port ) {
       margin-bottom: 1rem;
     }
@@ -68,7 +68,7 @@
 
     @include m.responsiveDesign( tab-port ) {
       display: unset;
-      height: 3.2rem;
+      height: 2rem;
       width: 1px;
       background-color: v.$color-pink;
     }
@@ -109,7 +109,6 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding-bottom: 5px;
     border-bottom: 1px solid v.$color-purple-tint;
 
     p {
@@ -138,7 +137,7 @@
       align-items: center;
 
       img {
-        width: 20rem;
+        width: 10rem;
       }
     }
 

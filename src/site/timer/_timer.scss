@@ -18,6 +18,10 @@
     }
   }
 
+  &__icon {
+    width: 6rem;
+  }
+
   &__last {
     @include m.responsiveDesign( phone ) {
       margin-bottom: 1.6rem;
@@ -72,6 +76,7 @@
   }
 
   &__photo {
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .15);
     height: 45rem;
     overflow-y: hidden;
 

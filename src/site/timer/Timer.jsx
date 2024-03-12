@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import timerPhoto from '../../assets/img/novios-4.jpg';
+import ring from '../../assets/img/anillo.png';
 
 export const Timer = () => {
 
@@ -45,6 +46,9 @@ export const Timer = () => {
     <section className="timer section-space">
       <div className="timer__container main-container grid grid-2-cols">
         <div className="text-center timer__content">
+          <figure className='timer__figure flex flex-center'>
+            <img className='timer__icon' src={ ring } alt="Ring icon" />
+          </figure>
           <h2 className="heading-section">Save the date</h2>
           <p className="timer__text">
             Queremos que seas parte de este importante momento en nuestras

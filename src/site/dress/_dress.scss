@@ -1,14 +1,17 @@
 @use '../../scss/abstracts/variables' as v;
 @use '../../scss/abstracts/mixins' as m;
 
-.dress {
+.dress {  
+
+  background-size: cover;
+  background-repeat: no-repeat;
 
   @include m.responsiveDesign( phone ) {
-    background-position: 85%;
+    background-position: -5%;
   }
 
   &__img {
-    width: 12rem;
+    width: 10rem;
   }
 
   &__title {

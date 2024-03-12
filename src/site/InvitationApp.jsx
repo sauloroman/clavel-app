@@ -1,6 +1,8 @@
-import { Timer } from "./gallery/Timer"
+import { Dress } from "./dress/Dress"
+import { Timer } from "./timer/Timer"
 import { Hero } from "./hero/Hero"
 import { History } from "./history/History"
+import { Location } from "./location/Location"
 
 export const InvitationApp = () => {
   return (
@@ -8,6 +10,8 @@ export const InvitationApp = () => {
       <Hero />
       <History />
       <Timer />
+      <Dress />
+      <Location />
     </>
   )
 }

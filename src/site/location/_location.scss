@@ -1,0 +1,27 @@
+@use '../../scss/abstracts/variables' as v;
+@use '../../scss/abstracts/mixins' as m;
+
+.location {
+
+  height: 60rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 20%;
+  position: relative;
+  background-attachment: local;
+
+  @include m.responsiveDesign( phone ) {
+    background-position-x: 85%;
+  }
+
+  &__layout {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: v.$color-purple-tint;
+    opacity: .2;
+  }
+
+}

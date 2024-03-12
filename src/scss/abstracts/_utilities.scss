@@ -7,3 +7,11 @@
 .text-center {
   text-align: center;
 }
+
+.show-element {
+  transform: translate(0);
+}
+
+.hide-element {
+  transform: translate(100%);
+}

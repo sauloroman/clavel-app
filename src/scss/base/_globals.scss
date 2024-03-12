@@ -29,6 +29,10 @@ a, button {
   border-bottom: 2px solid transparent;
 }
 
+a:active {
+  color: v.$color-brown;
+}
+
 img {
   display: block;
   max-width: 100%;

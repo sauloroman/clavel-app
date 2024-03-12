@@ -1,0 +1,147 @@
+@use '../../../scss/abstracts/variables' as v;
+@use '../../../scss/abstracts/mixins' as m;
+
+.navigation {
+
+  transition: all .4s ease-out;
+  display: flex;
+
+  @include m.responsiveDesign( tab-port ) {
+    transform: translate(100%);
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    width: 60%;
+    background-color: #fff;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3.2rem;
+    box-shadow: 0 15px 15px rgba( 0, 0, 0, .15);
+  }
+
+  &__list {
+    align-items: center;
+
+    @include m.responsiveDesign( tab-port ) {
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    font-family: v.$font-df-subtitle;
+    margin-right: 2rem;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    color: v.$color-black;
+    border: 1px solid transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    @include m.responsiveDesign( tab-port ) {
+      margin-right: 0;
+    }
+
+  }
+
+  &__link {
+
+    letter-spacing: 1px;
+    color: inherit;
+    transition: all .4s ease-out;
+
+    &:hover {
+      color: v.$color-pink;
+      border-color: v.$color-pink;
+    }
+
+    @include m.responsiveDesign( tab-port ) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__separator {
+    display: none;
+
+    @include m.responsiveDesign( tab-port ) {
+      display: unset;
+      height: 3.2rem;
+      width: 1px;
+      background-color: v.$color-pink;
+    }
+
+  }
+
+  &__icon {
+    
+    cursor: pointer;
+    font-size: 3.6rem;
+    transition: all .4s ease-out;
+    display: none;
+    pointer-events: none;
+    opacity: 0;
+    
+    &:hover {
+      color: v.$color-pink;
+    }
+    
+    &-close {
+      @include m.responsiveDesign( tab-port ) {
+        opacity: 1;
+        display: block;
+        pointer-events: unset;
+      }
+    }
+    
+    &-menu {
+      @include m.responsiveDesign( tab-port ) {
+        opacity: 1;
+        display: block;
+        pointer-events: unset;
+      }
+    }
+  }
+
+  &__iconClose, &__iconMenu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 5px;
+    border-bottom: 1px solid v.$color-purple-tint;
+
+    p {
+      display: none;
+      font-family: v.$font-df-heading;
+      margin-right: 1.2rem;
+      font-size: 2.4rem;
+
+      @include m.responsiveDesign( tab-port ) {
+        display: block;
+      }
+    }
+  }
+
+  &__iconMenu {
+    margin-bottom: 0;
+    border: none;
+  }
+
+  &__footer {
+    display: none;
+
+    @include m.responsiveDesign( tab-port ) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 20rem;
+      }
+    }
+
+  }
+
+}

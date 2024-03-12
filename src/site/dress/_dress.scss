@@ -1,0 +1,22 @@
+@use '../../scss/abstracts/variables' as v;
+@use '../../scss/abstracts/mixins' as m;
+
+.dress {
+
+  @include m.responsiveDesign( phone ) {
+    background-position: 85%;
+  }
+
+  &__img {
+    width: 12rem;
+  }
+
+  &__title {
+    margin-bottom: 3.2rem;
+  }
+
+  &__shape {
+    margin-bottom: 2rem;
+  }
+  
+} 

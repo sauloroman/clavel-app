@@ -38,7 +38,7 @@ input, select, textarea {
 .heading-primary {
   letter-spacing: 5px;
   font-size: 6.4rem;
-  font-weight: 600;
+  font-weight: 500;
 
   @include m.responsiveDesign( phone ) {
     font-size: 4.2rem;

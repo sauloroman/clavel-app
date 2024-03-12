@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import timerPhoto from '../../assets/img/novios-8.jpg';
+import timerPhoto from '../../assets/img/novios-4.jpg';
 
 export const Timer = () => {
 

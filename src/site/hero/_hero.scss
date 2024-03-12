@@ -17,6 +17,15 @@
     position: relative;
   }
 
+  &__top {
+    align-items: center;
+
+    &-img {
+      width: 12rem;
+    }
+
+  }
+
   &__layout {
     @include m.responsiveDesign(phone) {
       position: absolute;
@@ -32,9 +41,13 @@
     position: absolute;
     bottom: 5%;
     left: 5%;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 2rem;
     
     @include m.responsiveDesign( phone ) {
+      padding: 0;
       width: 100%;
+      bottom: 40%;
       left: 50%;
       transform: translateX(-50%);
     }
@@ -45,6 +58,14 @@
     text-transform: uppercase;
     letter-spacing: 3px;
     color: v.$color-brown;
+
+    @include m.responsiveDesign( phone ) {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__img {
+    width: 5rem;
   }
 
 }

@@ -40,8 +40,8 @@ export const Location = () => {
               <img src={ copaImage } alt="Cruz" className="location__img" />
             </div>
             <h3 className='location__type'>Recepción</h3>
-            <p className="location__information">Parroquia del Sagrado Corazón de Jesús</p>
-            <p className="location__address">5 de Mayo 602, Zona Centro, 20000 Aguascalientes, Ags.</p>
+            <p className="location__information">Salon Terraza Jardin El Herradero</p>
+            <p className="location__address">20326 Aguascalientes, Ags.</p>
             <p className="location__hour text-important">20:00</p>
             <a className='location__button' href="https://maps.app.goo.gl/fNAe3g82yUVQu3Vw5">Ver Mapa</a>
           </div>

@@ -63,6 +63,10 @@
     }
   }
 
+  &__address {
+    text-align: center;
+  }
+
   &__iconBox {
     width: 100%;
     display: flex;
@@ -71,14 +75,15 @@
     margin-bottom: -30px;
     
     @include m.responsiveDesign( tab-port ) {
-      margin-bottom: -40px;
+      justify-content: center;
+      margin-bottom: 0;
     }
 
     img {
       width: 10rem;
 
       @include m.responsiveDesign( tab-port ) {
-        width: 8rem;
+        width: 7rem;
       }
     }
 
